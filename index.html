@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Account</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <h1>Welcome to Moringa Bank</h1>
+        <p>Your bank of choice all the way...</p>
+      </div>
+    </div>
+    <section class="main-content">
+      <div class="container__accounts">
+        <form action="" id="transact">
+          <h2 class="stub-header">Register New Account</h2>
+          <div class="alert hide-alert form-alerts" role="alert"></div>
+          <div class="add-new-account">
+            <div class="form-group">
+              <!-- <label for="account-name">Name</label> -->
+              <input
+                class="form-control"
+                type="text"
+                name=""
+                id="account-name"
+                placeholder="Enter account name..."
+              />
+            </div>
+            <div class="form-group">
+              <!-- <label for="initial-deposit">Initial Deposit</label> -->
+              <input
+                class="form-control"
+                type="text"
+                name=""
+                id="initial-deposit"
+                placeholder="Enter initial deposit amount"
+              />
+            </div>
+          </div>
+          <div class="account-details"></div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-submit" id="submit-transact">Create Account</button>
+          </div>
+          <input type="hidden" value="create-new-account" id="action" />
+        </form>
+        <div class="account-statement"></div>
+      </div>
+    </section>
+  </body>
+</html>

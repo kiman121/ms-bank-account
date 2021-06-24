@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+h1 {
+  font-size: 3rem;
+}
+/* form#transact{
+    border:1px solid;
+    padding: 2em 1em;
+    border-radius: 3px;
+} */
+.header p {
+  font-size: 0.75em;
+  font-style: italic;
+  font-weight: 100;
+}
+.header {
+  padding: 1.5em 0;
+  background-color: #23424a;
+  color: #fff;
+}
+.container,
+.container__accounts {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container__accounts{
+    border: 1px solid #000;
+    padding: 2em;
+    border-radius: 3px;
+}
+.main-content {
+  padding-top: 1em;
+}
+
+.account-summary ul{
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0 .25em;
+}
+/* .account-summary li{
+    display: inline-block;
+    
+} */
+/* .account-summary, ul li +.account-summary, ul li{
+    float: right;
+} */
+
+.btn-submit {
+    background-color: #23424a;
+    color: #fff;
+    width: 100%;
+  }
+
+.btn-submit:hover {
+  opacity: 0.75;
+  color: #fff;
+}
+
+.hide-alert {
+  display: none;
+}
+.validate {
+  border-color: red !important;
+}
+.hide-div{
+    display: none;
+}
+
+.align-right{
+    text-align: right;
+}
+/* .content-container{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1em;
+} */
+/* .account-transactions{
+    display: none;
+} */
+/* .register-account {
+  width: 100%;
+} */
