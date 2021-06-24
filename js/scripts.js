@@ -1,6 +1,7 @@
 $(document).ready(function () {
   const newAccount = new Account();
   var balance = 0;
+
   $("form#transact").submit(function (event) {
     event.preventDefault();
     var inputtedAccountName = $("input#account-name").val(),
@@ -178,11 +179,11 @@ function alertUser(message, alertDivClass) {
   }, 2500);
 }
 
-function autoNumberTableRows(tableId, rowClass){
-    console.log(rowClass);
-    var renum = 1;
-    $("#"+tableId+" > tbody tr ."+rowClass).each(function() {
-        $(this).text(renum);
-        renum++;
-    });
+function autoNumberTableRows(tableId, rowClass) {
+  console.log(rowClass);
+  var renum = 1;
+  $("#" + tableId + " > tbody tr ." + rowClass).each(function () {
+    $(this).text(renum);
+    renum++;
+  });
 }
